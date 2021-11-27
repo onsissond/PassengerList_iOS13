@@ -1,0 +1,12 @@
+//
+// Copyright © 2021 LLC "Globus Media". All rights reserved.
+//
+
+"PassengerCell.details" = "%lu • %@ %@";
+
+"TitleForHeaderInSection.RussianPassport" = "Паспорт РФ";
+"TitleForHeaderInSection.RussianTravelPassport" = "Загранпаспорт РФ";
+"TitleForHeaderInSection.RussianBirthCertificate" = "Свидетельство о рождении";
+"TitleForHeaderInSection.NonRussianDocument" = "Неросссийский документ";
+"TitleForHeaderInSection.RussianMilitary" = "Военный билет";
+"TitleForHeaderInSection.IDSeamanPassport" = "Паспорт моряка";

@@ -1,0 +1,5 @@
+disabled_rules:
+  - identifier_name
+  - closure_parameter_position
+
+line_length: 100

@@ -1,0 +1,12 @@
+//
+// Copyright © 2021 LLC "Globus Media". All rights reserved.
+//
+
+"PassengerCell.details" = "%lu • %@ %@";
+
+"TitleForHeaderInSection.RussianPassport" = "Russian passport";
+"TitleForHeaderInSection.RussianTravelPassport" = "Russian travel passport";
+"TitleForHeaderInSection.RussianBirthCertificate" = "Russian birth certificate";
+"TitleForHeaderInSection.NonRussianDocument" = "Non-Russian document";
+"TitleForHeaderInSection.RussianMilitary" = "Russian military";
+"TitleForHeaderInSection.IDSeamanPassport" = "ID Seaman passport";
