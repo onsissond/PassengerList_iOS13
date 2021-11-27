@@ -1,0 +1,10 @@
+strings:
+  inputs: PassengersFramework/Resources/ru.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: PassengersFramework/Resources/Strings.swift
+xcassets:
+  inputs: PassengersFramework/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: PassengersFramework/Resources/Assets.swift
