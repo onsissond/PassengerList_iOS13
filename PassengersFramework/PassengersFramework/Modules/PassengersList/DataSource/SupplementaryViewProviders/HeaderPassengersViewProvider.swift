@@ -5,7 +5,7 @@
 import UIKit
 
 struct HeaderPassengersViewProvider: ChildPassengersViewProvider {
-    private let _dataSource: DataSource
+    private unowned var _dataSource: DataSource
 
     var kind: String { Kind.header }
 
