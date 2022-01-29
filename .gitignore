@@ -68,11 +68,3 @@ fastlane/screenshots
 fastlane/test_output
 tests_results
 output
-
-#Tutu specific
-secret.sh
-ci_secret.sh
-.fl*
-temp.keychain
-failed_snapshots
-temp_snapshot_recording

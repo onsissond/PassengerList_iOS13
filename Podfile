@@ -1,6 +1,6 @@
 platform :ios, '13'
 
-workspace 'iOSAcademy'
+workspace 'Passengers'
 inhibit_all_warnings!
 use_frameworks!
 

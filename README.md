@@ -2,7 +2,6 @@
 Проект состоит из:
 - SampleApp - iOS приложение.
 - PassengerFramework - фреймворк для списка пассажиров.
-- Core - экстеншен для совместимости решения с используемыми в основном приложении технологиями
 
 <img src="/Resources/PassengersScreen.png" width="500">
 
