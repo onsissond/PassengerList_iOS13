@@ -5,7 +5,7 @@
 import UIKit
 
 struct PassengersViewProviderImpl: PassengersViewProvider {
-    private let _dataSource: DataSource
+    private unowned var _dataSource: DataSource
 
     init(dataSource: DataSource) {
         _dataSource = dataSource
