@@ -26,12 +26,7 @@ final class PassengerSectionBackgroundView: UICollectionReusableView {
     }
 
     private func _setupSubviews() {
-        addSubview(_view) {
-            equal(\.topAnchor, constant: 40)
-            equal(\.leadingAnchor)
-            equal(\.trailingAnchor)
-            equal(\.bottomAnchor)
-        }
+        addSubview(_view, constraints: .allAnchors)
     }
 
     required init?(coder: NSCoder) {

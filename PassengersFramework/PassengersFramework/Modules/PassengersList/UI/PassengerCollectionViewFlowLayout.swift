@@ -40,14 +40,18 @@ extension UICollectionViewLayout {
     private static func _makeSection(
         for group: NSCollectionLayoutGroup
     ) -> NSCollectionLayoutSection {
+        let headerHeight: CGFloat = 40
         let section = NSCollectionLayoutSection(group: group)
-        section.interGroupSpacing = 1
-        section.decorationItems = [
+        let item = NSCollectionLayoutDecorationItem
             .background(
-                elementKind: PassengersSupplementaryViewKind.background
+                elementKind: PassengersSupplementaryViewKind
+                    .background
             )
+        item.contentInsets.top = headerHeight
+        section.boundarySupplementaryItems = [
+            .header(height: headerHeight)
         ]
-        section.boundarySupplementaryItems = [.header]
+        section.decorationItems = [item]
         return section
     }
 
@@ -83,10 +87,12 @@ private extension NSCollectionLayoutSupplementaryItem {
 }
 
 private extension NSCollectionLayoutBoundarySupplementaryItem {
-    static var header: NSCollectionLayoutBoundarySupplementaryItem {
+    static func header(
+        height: CGFloat
+    ) -> NSCollectionLayoutBoundarySupplementaryItem {
         let headerFooterSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
-            heightDimension: .absolute(40)
+            heightDimension: .absolute(height)
         )
         let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
             layoutSize: headerFooterSize,
