@@ -4,10 +4,8 @@
 
 import UIKit
 
-struct PassengerCellProviderImpl: PassengersCellProvider {
-    func make(
-        for collectionView: UICollectionView
-    ) -> PassengerDataSource.CellProvider {
+extension CellProviderFactory where ViewState == PassengerCell.ViewState {
+    static let passenger = CellProviderFactory { collectionView in
         collectionView.register(class: PassengerCell.self)
         return { collectionView, indexPath, viewState in
             let cell: PassengerCell = collectionView.dequeueReusableCell(

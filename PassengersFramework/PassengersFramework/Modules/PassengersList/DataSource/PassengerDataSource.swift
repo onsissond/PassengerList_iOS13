@@ -6,7 +6,7 @@ import UIKit
 
 typealias PassengerDataSource = UICollectionViewDiffableDataSource<
     PassengerSectionHeaderView.ViewState,
-    PassengerCell.ViewState
+    PassengerDataSourceItem
 >
 
 extension PassengerDataSource {
@@ -15,19 +15,21 @@ extension PassengerDataSource {
     ) {
         self.init(
             collectionView: collectionView,
-            cellProvider: PassengerCellProviderImpl(),
+            cellProvider: CellProviderFactory.composite([
+                CellProviderFactory.passenger.pullback(\.passenger)
+            ]).make(collectionView),
             supplementaryViewProvider: PassengersViewProviderImpl.init
         )
     }
 
     convenience init(
         collectionView: UICollectionView,
-        cellProvider: PassengersCellProvider,
+        cellProvider: @escaping PassengersCellProvider,
         supplementaryViewProvider: (PassengerDataSource) -> PassengersViewProvider
     ) {
         self.init(
             collectionView: collectionView,
-            cellProvider: cellProvider.make(for: collectionView)
+            cellProvider: cellProvider
         )
         self.supplementaryViewProvider = supplementaryViewProvider(self)
             .make(for: collectionView)

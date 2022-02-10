@@ -6,7 +6,7 @@ import Foundation
 
 struct PassengerDataSourceSection {
     var sectionHeader: PassengerSectionHeaderView.ViewState
-    var items: [PassengerCell.ViewState]
+    var items: [PassengerDataSourceItem]
 }
 
 #if DEBUG
@@ -34,7 +34,7 @@ extension Array where Element == PassengerDataSourceSection {
                 number: "1234",
                 series: "567890"
             )
-        ]),
+        ].map(PassengerDataSourceItem.passenger)),
         .init(sectionHeader: .russianBirthCertificate, items: [
             PassengerCell.ViewState(
                 icon: .child,
@@ -43,7 +43,7 @@ extension Array where Element == PassengerDataSourceSection {
                 number: "1234",
                 series: "567890"
             )
-        ]),
+        ].map(PassengerDataSourceItem.passenger)),
         .init(sectionHeader: .idSeamanPassport, items: [
             PassengerCell.ViewState(
                 icon: .male,
@@ -52,7 +52,7 @@ extension Array where Element == PassengerDataSourceSection {
                 number: "1234",
                 series: "567890"
             )
-        ])
+        ].map(PassengerDataSourceItem.passenger))
     ]
 }
 #endif

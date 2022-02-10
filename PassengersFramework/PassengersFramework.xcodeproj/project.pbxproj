@@ -52,6 +52,7 @@
 		E05331F4275266DD009DD77B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05331F1275266DD009DD77B /* ReusableView.swift */; };
 		E05331F5275266DD009DD77B /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05331F2275266DD009DD77B /* UITableView+.swift */; };
 		E0674883273A6CE500213EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0674882273A6CE500213EAD /* Assets.xcassets */; };
+		E0B5834127B526BE00C474B9 /* PassengerDataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B5834027B526BE00C474B9 /* PassengerDataSourceItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		E05331F1275266DD009DD77B /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		E05331F2275266DD009DD77B /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		E0674882273A6CE500213EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0B5834027B526BE00C474B9 /* PassengerDataSourceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerDataSourceItem.swift; sourceTree = "<group>"; };
 		F503E9B927F8CFAE169D30AD /* Pods-PassengersFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassengersFramework.debug.xcconfig"; path = "Target Support Files/Pods-PassengersFramework/Pods-PassengersFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +234,7 @@
 				A781D27D273D1CC50006AF35 /* PassengerDataSource.swift */,
 				E048487A274CD97800BBCB8D /* PassengerDataSource+Apply.swift */,
 				A781D281273D4FC40006AF35 /* PassengerDataSourceSection.swift */,
+				E0B5834027B526BE00C474B9 /* PassengerDataSourceItem.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				E048487C274CD97800BBCB8D /* PassengerDataSource+Apply.swift in Sources */,
 				A7765419273155DB00520EBF /* Assets.swift in Sources */,
 				A776541C2731676500520EBF /* PassengerCell.swift in Sources */,
+				E0B5834127B526BE00C474B9 /* PassengerDataSourceItem.swift in Sources */,
 				E027A67A27453F9200065D80 /* SeparatorPassengersViewProvider.swift in Sources */,
 				A781D27A273BF6090006AF35 /* PassengerSectionHeaderView.swift in Sources */,
 				E00CD11B273D61E60084C4C6 /* PassengerDataSourceFactory.swift in Sources */,
