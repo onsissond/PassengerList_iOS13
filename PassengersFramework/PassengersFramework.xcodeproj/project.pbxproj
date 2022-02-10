@@ -20,7 +20,7 @@
 		A781D273273BB56D0006AF35 /* Strings.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A781D275273BB56D0006AF35 /* Strings.stringsdict */; };
 		A781D27A273BF6090006AF35 /* PassengerSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781D279273BF6090006AF35 /* PassengerSectionHeaderView.swift */; };
 		A781D27E273D1CC50006AF35 /* PassengerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781D27D273D1CC50006AF35 /* PassengerDataSource.swift */; };
-		A781D282273D4FC40006AF35 /* DataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781D281273D4FC40006AF35 /* DataSourceItem.swift */; };
+		A781D282273D4FC40006AF35 /* DataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781D281273D4FC40006AF35 /* DataSourceSection.swift */; };
 		A7B3230827429A9D0075AC0A /* HeaderPassengersViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B3230727429A9C0075AC0A /* HeaderPassengersViewProvider.swift */; };
 		A7E21DFA2744E4BA005B276E /* PassengerSectionBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E21DF92744E4BA005B276E /* PassengerSectionBackgroundView.swift */; };
 		E00CD11B273D61E60084C4C6 /* DataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00CD11A273D61E60084C4C6 /* DataSourceFactory.swift */; };
@@ -98,7 +98,7 @@
 		A781D276273BB5700006AF35 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Strings.stringsdict; sourceTree = "<group>"; };
 		A781D279273BF6090006AF35 /* PassengerSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerSectionHeaderView.swift; sourceTree = "<group>"; };
 		A781D27D273D1CC50006AF35 /* PassengerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerDataSource.swift; sourceTree = "<group>"; };
-		A781D281273D4FC40006AF35 /* DataSourceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceItem.swift; sourceTree = "<group>"; };
+		A781D281273D4FC40006AF35 /* DataSourceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceSection.swift; sourceTree = "<group>"; };
 		A7B3230727429A9C0075AC0A /* HeaderPassengersViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPassengersViewProvider.swift; sourceTree = "<group>"; };
 		A7DAF9AD2747BA330024FB89 /* PassengerDataSourceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerDataSourceExtension.swift; sourceTree = "<group>"; };
 		A7DAF9AF2747BB090024FB89 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 				E027A67F2745490700065D80 /* SupplementaryViewProviders */,
 				E00CD11A273D61E60084C4C6 /* DataSourceFactory.swift */,
 				A781D27D273D1CC50006AF35 /* PassengerDataSource.swift */,
-				A781D281273D4FC40006AF35 /* DataSourceItem.swift */,
+				A781D281273D4FC40006AF35 /* DataSourceSection.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -572,7 +572,7 @@
 				A781D26E273BAAFD0006AF35 /* PassengerIconView.swift in Sources */,
 				E027A6862746384800065D80 /* PassengersViewProviderImpl.swift in Sources */,
 				E027A67C27453FA700065D80 /* CompositePassengersViewProvider.swift in Sources */,
-				A781D282273D4FC40006AF35 /* DataSourceItem.swift in Sources */,
+				A781D282273D4FC40006AF35 /* DataSourceSection.swift in Sources */,
 				A7765418273155DB00520EBF /* Strings.swift in Sources */,
 				E027A6882746387D00065D80 /* PassengersCellProvider.swift in Sources */,
 				A781D27E273D1CC50006AF35 /* PassengerDataSource.swift in Sources */,

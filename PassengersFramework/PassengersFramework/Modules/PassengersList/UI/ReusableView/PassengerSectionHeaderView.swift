@@ -34,7 +34,6 @@ final class PassengerSectionHeaderView: UICollectionReusableView {
 }
 
 extension PassengerSectionHeaderView {
-
     enum ViewState: CaseIterable {
         case russianPassport
         case russianTravelPassport
@@ -45,19 +44,25 @@ extension PassengerSectionHeaderView {
     }
 
     func render(_ viewState: ViewState) {
-        switch viewState {
+        _label.text = viewState.description
+    }
+}
+
+private extension PassengerSectionHeaderView.ViewState {
+    var description: String {
+        switch self {
         case .russianPassport:
-            _label.text = L10n.TitleForHeaderInSection.russianPassport
+            return L10n.TitleForHeaderInSection.russianPassport
         case .russianTravelPassport:
-            _label.text = L10n.TitleForHeaderInSection.russianTravelPassport
+            return L10n.TitleForHeaderInSection.russianTravelPassport
         case .russianBirthCertificate:
-            _label.text = L10n.TitleForHeaderInSection.russianBirthCertificate
+            return L10n.TitleForHeaderInSection.russianBirthCertificate
         case .nonRussianDocument:
-            _label.text = L10n.TitleForHeaderInSection.nonRussianDocument
+            return L10n.TitleForHeaderInSection.nonRussianDocument
         case .russianMilitary:
-            _label.text = L10n.TitleForHeaderInSection.russianMilitary
+            return L10n.TitleForHeaderInSection.russianMilitary
         case .idSeamanPassport:
-            _label.text = L10n.TitleForHeaderInSection.idSeamanPassport
+            return L10n.TitleForHeaderInSection.idSeamanPassport
         }
     }
 }

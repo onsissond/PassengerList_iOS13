@@ -5,12 +5,7 @@
 import UIKit
 
 extension PassengerDataSource {
-    typealias Snapshot = NSDiffableDataSourceSnapshot<
-        PassengerSectionHeaderView.ViewState,
-        PassengerCell.ViewState
-    >
-
-    func apply(with list: [DataSourceItem], animate: Bool = true) {
+    func apply(with list: [DataSourceSection], animate: Bool = true) {
         var snapshot = Snapshot()
         snapshot.appendSections(list.map(\.sectionHeader))
         for element in list {
@@ -21,4 +16,10 @@ extension PassengerDataSource {
         }
         apply(snapshot, animatingDifferences: animate)
     }
+}
+
+extension UICollectionViewDiffableDataSource {
+    typealias Snapshot = NSDiffableDataSourceSnapshot<
+        SectionIdentifierType, ItemIdentifierType
+    >
 }
