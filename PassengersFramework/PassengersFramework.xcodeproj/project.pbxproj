@@ -20,10 +20,10 @@
 		A781D273273BB56D0006AF35 /* Strings.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A781D275273BB56D0006AF35 /* Strings.stringsdict */; };
 		A781D27A273BF6090006AF35 /* PassengerSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781D279273BF6090006AF35 /* PassengerSectionHeaderView.swift */; };
 		A781D27E273D1CC50006AF35 /* PassengerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781D27D273D1CC50006AF35 /* PassengerDataSource.swift */; };
-		A781D282273D4FC40006AF35 /* DataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781D281273D4FC40006AF35 /* DataSourceSection.swift */; };
+		A781D282273D4FC40006AF35 /* PassengerDataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781D281273D4FC40006AF35 /* PassengerDataSourceSection.swift */; };
 		A7B3230827429A9D0075AC0A /* HeaderPassengersViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B3230727429A9C0075AC0A /* HeaderPassengersViewProvider.swift */; };
 		A7E21DFA2744E4BA005B276E /* PassengerSectionBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E21DF92744E4BA005B276E /* PassengerSectionBackgroundView.swift */; };
-		E00CD11B273D61E60084C4C6 /* DataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00CD11A273D61E60084C4C6 /* DataSourceFactory.swift */; };
+		E00CD11B273D61E60084C4C6 /* PassengerDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00CD11A273D61E60084C4C6 /* PassengerDataSourceFactory.swift */; };
 		E00CD11D273D62050084C4C6 /* PassengerCellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00CD11C273D62050084C4C6 /* PassengerCellProvider.swift */; };
 		E027A6782745378500065D80 /* PassengerSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E027A6772745378500065D80 /* PassengerSeparatorView.swift */; };
 		E027A67A27453F9200065D80 /* SeparatorPassengersViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E027A67927453F9200065D80 /* SeparatorPassengersViewProvider.swift */; };
@@ -33,7 +33,7 @@
 		E027A6862746384800065D80 /* PassengersViewProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E027A6852746384800065D80 /* PassengersViewProviderImpl.swift */; };
 		E027A6882746387D00065D80 /* PassengersCellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E027A6872746387D00065D80 /* PassengersCellProvider.swift */; };
 		E048487C274CD97800BBCB8D /* PassengerDataSource+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048487A274CD97800BBCB8D /* PassengerDataSource+Apply.swift */; };
-		E0484888274CDA0500BBCB8D /* PassengerCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0484886274CDA0500BBCB8D /* PassengerCollectionViewFlowLayout.swift */; };
+		E0484888274CDA0500BBCB8D /* PassengerCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0484886274CDA0500BBCB8D /* PassengerCollectionViewLayout.swift */; };
 		E05331D12752658C009DD77B /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = E05331D02752658C009DD77B /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E05331D527526597009DD77B /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05331CE2752658C009DD77B /* Core.framework */; };
 		E05331D627526597009DD77B /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E05331CE2752658C009DD77B /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -98,12 +98,12 @@
 		A781D276273BB5700006AF35 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Strings.stringsdict; sourceTree = "<group>"; };
 		A781D279273BF6090006AF35 /* PassengerSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerSectionHeaderView.swift; sourceTree = "<group>"; };
 		A781D27D273D1CC50006AF35 /* PassengerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerDataSource.swift; sourceTree = "<group>"; };
-		A781D281273D4FC40006AF35 /* DataSourceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceSection.swift; sourceTree = "<group>"; };
+		A781D281273D4FC40006AF35 /* PassengerDataSourceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerDataSourceSection.swift; sourceTree = "<group>"; };
 		A7B3230727429A9C0075AC0A /* HeaderPassengersViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPassengersViewProvider.swift; sourceTree = "<group>"; };
 		A7DAF9AD2747BA330024FB89 /* PassengerDataSourceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerDataSourceExtension.swift; sourceTree = "<group>"; };
 		A7DAF9AF2747BB090024FB89 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		A7E21DF92744E4BA005B276E /* PassengerSectionBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerSectionBackgroundView.swift; sourceTree = "<group>"; };
-		E00CD11A273D61E60084C4C6 /* DataSourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceFactory.swift; sourceTree = "<group>"; };
+		E00CD11A273D61E60084C4C6 /* PassengerDataSourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerDataSourceFactory.swift; sourceTree = "<group>"; };
 		E00CD11C273D62050084C4C6 /* PassengerCellProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerCellProvider.swift; sourceTree = "<group>"; };
 		E027A6772745378500065D80 /* PassengerSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerSeparatorView.swift; sourceTree = "<group>"; };
 		E027A67927453F9200065D80 /* SeparatorPassengersViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorPassengersViewProvider.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		E027A6852746384800065D80 /* PassengersViewProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersViewProviderImpl.swift; sourceTree = "<group>"; };
 		E027A6872746387D00065D80 /* PassengersCellProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersCellProvider.swift; sourceTree = "<group>"; };
 		E048487A274CD97800BBCB8D /* PassengerDataSource+Apply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PassengerDataSource+Apply.swift"; sourceTree = "<group>"; };
-		E0484886274CDA0500BBCB8D /* PassengerCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengerCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		E0484886274CDA0500BBCB8D /* PassengerCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengerCollectionViewLayout.swift; sourceTree = "<group>"; };
 		E05331C427521E42009DD77B /* CGFloat+GridStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+GridStep.swift"; sourceTree = "<group>"; };
 		E05331CE2752658C009DD77B /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05331D02752658C009DD77B /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
@@ -188,7 +188,6 @@
 		A72A604427301E9B00546C07 /* PassengersFramework */ = {
 			isa = PBXGroup;
 			children = (
-				E027A68E27463C8700065D80 /* Extensions */,
 				A781D283273E4CF40006AF35 /* Modules */,
 				A79685EE27312AEB0025CD32 /* Resources */,
 				A72A604527301E9B00546C07 /* PassengersFramework.h */,
@@ -219,7 +218,7 @@
 				E027A68C27463C5A00065D80 /* Views */,
 				E027A68B27463B1900065D80 /* ReusableView */,
 				A72A60562730260200546C07 /* PassengersViewController.swift */,
-				E0484886274CDA0500BBCB8D /* PassengerCollectionViewFlowLayout.swift */,
+				E0484886274CDA0500BBCB8D /* PassengerCollectionViewLayout.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -229,9 +228,10 @@
 			children = (
 				E027A6842746368000065D80 /* CellProviders */,
 				E027A67F2745490700065D80 /* SupplementaryViewProviders */,
-				E00CD11A273D61E60084C4C6 /* DataSourceFactory.swift */,
+				E00CD11A273D61E60084C4C6 /* PassengerDataSourceFactory.swift */,
 				A781D27D273D1CC50006AF35 /* PassengerDataSource.swift */,
-				A781D281273D4FC40006AF35 /* DataSourceSection.swift */,
+				E048487A274CD97800BBCB8D /* PassengerDataSource+Apply.swift */,
+				A781D281273D4FC40006AF35 /* PassengerDataSourceSection.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -313,14 +313,6 @@
 				A776541B2731676500520EBF /* PassengerCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		E027A68E27463C8700065D80 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E048487A274CD97800BBCB8D /* PassengerDataSource+Apply.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E0484874274CD87900BBCB8D /* Recovered References */ = {
@@ -572,21 +564,21 @@
 				A781D26E273BAAFD0006AF35 /* PassengerIconView.swift in Sources */,
 				E027A6862746384800065D80 /* PassengersViewProviderImpl.swift in Sources */,
 				E027A67C27453FA700065D80 /* CompositePassengersViewProvider.swift in Sources */,
-				A781D282273D4FC40006AF35 /* DataSourceSection.swift in Sources */,
+				A781D282273D4FC40006AF35 /* PassengerDataSourceSection.swift in Sources */,
 				A7765418273155DB00520EBF /* Strings.swift in Sources */,
 				E027A6882746387D00065D80 /* PassengersCellProvider.swift in Sources */,
 				A781D27E273D1CC50006AF35 /* PassengerDataSource.swift in Sources */,
 				A7E21DFA2744E4BA005B276E /* PassengerSectionBackgroundView.swift in Sources */,
 				E027A6812745529000065D80 /* PassengersSupplementaryViewKind.swift in Sources */,
 				E027A6782745378500065D80 /* PassengerSeparatorView.swift in Sources */,
-				E0484888274CDA0500BBCB8D /* PassengerCollectionViewFlowLayout.swift in Sources */,
+				E0484888274CDA0500BBCB8D /* PassengerCollectionViewLayout.swift in Sources */,
 				A7B3230827429A9D0075AC0A /* HeaderPassengersViewProvider.swift in Sources */,
 				E048487C274CD97800BBCB8D /* PassengerDataSource+Apply.swift in Sources */,
 				A7765419273155DB00520EBF /* Assets.swift in Sources */,
 				A776541C2731676500520EBF /* PassengerCell.swift in Sources */,
 				E027A67A27453F9200065D80 /* SeparatorPassengersViewProvider.swift in Sources */,
 				A781D27A273BF6090006AF35 /* PassengerSectionHeaderView.swift in Sources */,
-				E00CD11B273D61E60084C4C6 /* DataSourceFactory.swift in Sources */,
+				E00CD11B273D61E60084C4C6 /* PassengerDataSourceFactory.swift in Sources */,
 				A72A60572730260200546C07 /* PassengersViewController.swift in Sources */,
 				A776541E2731676F00520EBF /* PassengersLoadedView.swift in Sources */,
 			);

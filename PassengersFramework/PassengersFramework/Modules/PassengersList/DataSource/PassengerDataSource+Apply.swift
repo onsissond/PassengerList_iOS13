@@ -5,7 +5,7 @@
 import UIKit
 
 extension PassengerDataSource {
-    func apply(with list: [DataSourceSection], animate: Bool = true) {
+    func apply(with list: [PassengerDataSourceSection], animate: Bool = true) {
         var snapshot = Snapshot()
         snapshot.appendSections(list.map(\.sectionHeader))
         for element in list {

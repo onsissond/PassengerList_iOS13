@@ -50,19 +50,20 @@ extension PassengerSectionHeaderView {
 
 private extension PassengerSectionHeaderView.ViewState {
     var description: String {
+        typealias Strings = L10n.TitleForHeaderInSection
         switch self {
         case .russianPassport:
-            return L10n.TitleForHeaderInSection.russianPassport
+            return Strings.russianPassport
         case .russianTravelPassport:
-            return L10n.TitleForHeaderInSection.russianTravelPassport
+            return Strings.russianTravelPassport
         case .russianBirthCertificate:
-            return L10n.TitleForHeaderInSection.russianBirthCertificate
+            return Strings.russianBirthCertificate
         case .nonRussianDocument:
-            return L10n.TitleForHeaderInSection.nonRussianDocument
+            return Strings.nonRussianDocument
         case .russianMilitary:
-            return L10n.TitleForHeaderInSection.russianMilitary
+            return Strings.russianMilitary
         case .idSeamanPassport:
-            return L10n.TitleForHeaderInSection.idSeamanPassport
+            return Strings.idSeamanPassport
         }
     }
 }

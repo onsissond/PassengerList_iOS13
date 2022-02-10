@@ -3,14 +3,13 @@
 //
 
 import UIKit
-import Core
 
 final class PassengersViewController: UIViewController {
 
     private var _passengersView = PassengersView()
     private var _dataSource: PassengerDataSource
 
-    init(dataSourceFactory: DataSourceFactory) {
+    init(dataSourceFactory: PassengerDataSourceFactory) {
         self._dataSource = dataSourceFactory(
             _passengersView.collectionView
         )

@@ -4,13 +4,14 @@
 
 import Foundation
 
-struct DataSourceSection {
+struct PassengerDataSourceSection {
     var sectionHeader: PassengerSectionHeaderView.ViewState
     var items: [PassengerCell.ViewState]
 }
 
-extension Array where Element == DataSourceSection {
-    static let mock: [DataSourceSection] = [
+#if DEBUG
+extension Array where Element == PassengerDataSourceSection {
+    static let mock: [PassengerDataSourceSection] = [
         .init(sectionHeader: .russianPassport, items: [
             PassengerCell.ViewState(
                 icon: .male,
@@ -54,3 +55,4 @@ extension Array where Element == DataSourceSection {
         ])
     ]
 }
+#endif

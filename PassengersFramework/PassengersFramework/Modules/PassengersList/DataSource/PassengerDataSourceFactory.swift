@@ -4,4 +4,4 @@
 
 import UIKit
 
-typealias DataSourceFactory = (UICollectionView) -> PassengerDataSource
+typealias PassengerDataSourceFactory = (UICollectionView) -> PassengerDataSource
